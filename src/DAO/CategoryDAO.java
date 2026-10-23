@@ -1,0 +1,20 @@
+
+package DAO;
+
+import java.util.List;
+import DTO.Category;
+
+public interface CategoryDAO {
+
+    boolean addCategory(Category category);
+
+    List<Category> getAllCategories();
+
+    Category getCategoryById(int categoryId);
+
+    boolean updateCategory(Category category);
+
+    boolean deleteCategory(int categoryId);
+
+    boolean categoryExists(int categoryId);
+}
